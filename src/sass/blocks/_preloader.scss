@@ -1,0 +1,19 @@
+.preloader {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EAEBEE;
+    svg {
+        display: block;
+        margin: 0 auto;
+    }
+    &_text {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin-top: 28px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $text-color;
+    }
+}

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome /3</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="welcome">
+        <div class="welcome_wrapper">
+            <div class="welcome_left">
+                <div class="left-container">
+                    <a href="#" class="sign_up-header welcome_left-header header_spoty-icon-logo"></a>
+                    <div class="navigation-container">
+                        <a href="#" class="dashboard selected">
+                            Dashboard
+                        </a>
+
+                        <a href="#" class="menu">
+                            Menu
+                        </a>
+
+                        <a href="#" class="offers">
+                            Offers
+                        </a>
+
+                        <a href="#" class="bookings">
+                            Bookings
+                        </a>
+
+                        <a href="#" class="locations">
+                            Locations
+                        </a>
+
+                        <a href="#" class="support">
+                            Support
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="welcome_left-log-out">
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+
+
+            <div class="welcome_right">
+                <div class="welcome_right-header">
+                    <div class="welcome_right-header-title">
+                        <div class="welcome_right-header-title-icon"></div>
+                        <div class="welcome_right-header-title-text">Welcome to Spoty</div>
+                    </div>
+                    <div class="welcome_right-header-steps">
+                        <div class="welcome_right-header-steps-done">3 of 5 steps done</div>
+                        <ul class="welcome_right-header-steps-circles">
+                            <li class="steps-circles done-step-circle"></li>
+                            <li class="steps-circles done-step-circle"></li>
+                            <li class="steps-circles done-step-circle"></li>
+                            <li class="steps-circles next-step-circle"></li>
+                            <li class="steps-circles undone-step-circle"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="steps">
+                    <div class="steps_wrapper">
+                        <div class="steps-to-do done-steps">
+                            <div class="to-do done-info">
+                                <div class="to-do-wrapper">
+                                    <div class="done-icon"></div>
+                                    <div class="to-do-info done-info">
+                                        <div class="done-info-title">Create your Spoty account</div>
+                                        <div class="done-info-descr">Add your resturant to Spoty</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="steps-to-do done-steps">
+                            <div class="to-do done-info">
+                                <div class="to-do-wrapper">
+                                    <div class="done-icon"></div>
+                                    <div class="to-do-info done-info">
+                                        <div class="done-info-title">Tell us a little about your restaurant</div>
+                                        <div class="done-info-descr">Add your restaurant location, description, working
+                                            hours</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="steps-to-do done-steps">
+                            <div class="to-do done-info">
+                                <div class="to-do-wrapper">
+                                    <div class="done-icon"></div>
+                                    <div class="to-do-info done-info">
+                                        <div class="done-info-title">What is on your menu?</div>
+                                        <div class="done-info-descr">Add your restaurant menu and prices</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="steps-to-do">
+                            <div class="to-do">
+                                <div class="to-do-wrapper">
+                                    <div class="my-account-icon"></div>
+                                    <div class="to-do-info">
+                                        <div class="to-do-info-title">My Account</div>
+                                        <div class="to-do-info-descr">Add information about you and restaurant</div>
+                                    </div>
+                                </div>
+                                <button class="to-do-btn btn-add">Add details</button>
+                            </div>
+                        </div>
+                        <div class="steps-to-do">
+                            <div class="to-do">
+                                <div class="to-do-wrapper">
+                                    <div class="creat-offer-icon"></div>
+                                    <div class="to-do-info">
+                                        <div class="to-do-info-title">Create your first offer</div>
+                                        <div class="to-do-info-descr">Publish your first offer</div>
+                                    </div>
+                                </div>
+                                <button class="create-offer-btn">Create offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-canvas modal-welcome">
+        <div class="account-modal">
+            <div class="modal-header account-header">
+                <div class="modal-title">My Account</div>
+                <a href="#" class="modal-close"></a>
+            </div>
+
+            <div class="navigation nav-account">
+                <a href="#">
+                    Profile
+                </a>
+
+                <a href="#">
+                    Billing details
+                </a>
+
+                <a href="#" class="selected">
+                    Billing information
+                </a>
+
+                <a href="#">
+                    My Restaurant
+                </a>
+            </div>
+
+            <div class="profile">
+                <div class="profile-icon"></div>
+                <div class="profile-forms">
+                    <div class="my-account-title">basic information</div>
+                    <form action="#">
+                        <div class="profile-input-wrapper">
+                            <input required id="name" class="first-name" type="text">
+                            <label class="orange-label" for="name">First name</label>
+                        </div>
+
+                        <div class="profile-input-wrapper">
+                            <input required class="grey-placeholder" placeholder="Last name" type="text">
+                        </div>
+
+                        <div class="profile-input-wrapper">
+                            <input required id="profile-email" class="email" type="email">
+                            <div class="icon-for-email"></div>
+                            <label class="label-for-email" for="profile-email">Email address</label>
+                            <div class="forms-link"><a href="#">You need verify your email address</a></div>
+                        </div>
+
+                        <div class="profile-input-wrapper">
+                            <input required id="profile-num" class="number" placeholder="+46" type="phone">
+                            <label for="profile-num">Phone number</label>
+                        </div>
+
+                        <div class="my-account-title">Change Password</div>
+
+                        <div class="profile-input-wrapper">
+                            <input required class="grey-placeholder password" placeholder="New password"
+                                type="password">
+                            <div class="forms-link"><a href="#">Show password</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="billing-details">
+                <div class="my-account-title">business Details</div>
+                <div class="billing-details-form-wrapper">
+                    <form action="#">
+                        <div class="profile-input-wrapper">
+                            <input required id="legal-name" class="first-name" type="text">
+                            <label class="orange-label" for="legal-name">Legal name</label>
+                        </div>
+
+                        <div class="profile-input-wrapper">
+                            <input required class="grey-placeholder" placeholder="VAT number" type="text">
+                        </div>
+
+                        <div class="my-account-title">Food and Veterinary Service Permit</div>
+
+
+                        <div class="profile-input-wrapper permit-number">
+                            <input required class="grey-placeholder" placeholder="Permit number" type="text">
+                        </div>
+
+                        <div class="my-account-title">Legal address</div>
+
+                        <label class="checkbox-container billing-details-checkbox">
+                            <input required type="checkbox"><span>Same as contact address</span>
+                        </label>
+
+                        <div class="restaurant-address-forms forms">
+                            <div class="input-street-name">
+                                <input required id="street-name" type="text" class="big-form">
+                                <label for="street-name">Street name</label>
+                            </div>
+
+                            <div class="short-forms">
+                                <div class="short-input">
+                                    <input class="input-with-label" required id="short-input-city" type="text">
+                                    <label for="short-input-city">City</label>
+                                </div>
+
+                                <div class="short-input">
+                                    <input class="input-with-label" required id="region" type="text">
+                                    <label for="region">Region</label>
+                                </div>
+
+                                <div class="short-lower-input">
+                                    <input class="input-with-label" required id="short-input-zip-code" type="text">
+                                    <label for="short-input-zip-code">ZIP code</label>
+                                </div>
+
+                                <div class="short-lower-input">
+                                    <input class="input-with-label" required id="short-input-country" type="text">
+                                    <label for="short-input-country">Country</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="billing-information">
+                <div class="billing-information-wrapper">
+                    <form action="#">
+                        <div class="billing-information-header">
+                            <div class="my-account-title">Billing plan</div>
+                            <div class="right-text">
+                                <div class="right-title-icon"></div>
+                                <div class="right-title">Free plan</div>
+                            </div>
+                        </div>
+
+
+                        <div class="billing-information-container">
+                            <div class="billing-information-title">Upgrade to Buisness plan</div>
+                            <div class="billing-information-form">
+
+                                <div class="container-list">1. Choose your billing cycle</div>
+
+                                <div class="radio-wrapper">
+                                    <div class="radio-container">
+                                        <label for="radio">
+                                            <input name="billing-cycle" type="radio">
+                                        </label>
+                                        <div class="radio-text">
+                                            <div class="radio-title">Billed yearly</div>
+                                            <div class="radio-descr">€ 99.00 /year</div>
+                                            <div class="save-forty-five-doll">You save €45.23</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="radio-container">
+                                        <label for="radio">
+                                            <input name="billing-cycle" type="radio">
+                                        </label>
+                                        <div class="radio-text">
+                                            <div class="radio-title">Billed monthly</div>
+                                            <div class="radio-descr">€ 8.50 /month</div>
+                                            <div class="save-twenty-per">💰 Pay annually and SAVE 20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container-list">2. Enter payment details</div>
+
+                                <div class="radio-wrapper">
+                                    <div class="radio-container">
+                                        <label for="radio">
+                                            <input name="how-to-pay" type="radio">
+                                        </label>
+                                        <div class="radio-icons">
+                                            <div class="visa-icon"></div>
+                                            <div class="mastercard-icon"></div>
+                                            <div class="amex-icon"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="radio-container">
+                                        <label for="radio">
+                                            <input name="how-to-pay" type="radio">
+                                        </label>
+                                        <div class="radio-icons">
+                                            <div class="pay-pal-icon"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-for-card forms">
+                                    <input required placeholder="Card number" type="text" class="big-form">
+
+                                    <div class="short-forms">
+                                        <div class="top-inputs">
+                                            <div class="short-input">
+                                                <input class="left-input" required placeholder="Expiration date"
+                                                    type="text">
+                                            </div>
+
+                                            <div class="short-input">
+                                                <input required placeholder="CVC / CVC2" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="bottom-inputs">
+                                            <div class="short-lower-input">
+                                                <input class="left-input" required type="text">
+                                            </div>
+
+                                            <div class="short-lower-input">
+                                                <input required placeholder="ZIP code" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <label class="checkbox-container billing-details-checkbox">
+                            <input required type="checkbox"><span>I agree to the Spoty Terms and the Automatic Renewal
+                                Terms</span>
+                        </label>
+                    </form>
+                </div>
+
+                <div class="billing-information-button"><button>Buy now</button></div>
+            </div>
+
+            <div class="selected-billing-information">
+                <div class="billing-information-header">
+                    <div class="my-account-title">Billing plan</div>
+                    <div class="right-text">
+                        <div class="right-title-icon"></div>
+                        <div class="right-title">Business plan</div>
+                    </div>
+                </div>
+
+                <div class="payment-method-title">Payment method</div>
+
+                <div class="payment-method-container">
+                    <div class="left-info">
+                        <div class="card-icon"></div>
+                        <div class="card-num">.... 4536</div>
+                        <div class="numbers">11 / 21</div>
+                    </div>
+                    <div class="payment-method-icons">
+                        <a href="#" class="delete-icon"></a>
+                        <a href="#" class="plus-icon"></a>
+                    </div>
+                </div>
+
+                <div class="next-payment-wrapper">
+                    <div class="left-text">Next payment:<span> Monday, 19 May 2020</span></div>
+                    <div class="right-text">Amount:<span> € 128.00</span></div>
+                </div>
+
+                <div class="my-account-title">Invoices</div>
+
+                <div class="invoices-wrapper">
+                    <div class="invoice-container">
+                        <div class="invoice-text-wrapper">
+                            <div class="numbers-and-price">#144563566543 · €128.00</div>
+                            <div class="invoice-date">May 19, 2019</div>
+                        </div>
+                        <div class="invoice-save-icon"><a href="#"></a></div>
+                    </div>
+
+                    <div class="invoice-container">
+                        <div class="invoice-text-wrapper">
+                            <div class="numbers-and-price">#144563566543 · €128.00</div>
+                            <div class="invoice-date">May 19, 2019</div>
+                        </div>
+                        <div class="invoice-save-icon"><a href="#"></a></div>
+                    </div>
+
+                    <div class="invoice-container">
+                        <div class="invoice-text-wrapper">
+                            <div class="numbers-and-price">#144563566543 · €128.00</div>
+                            <div class="invoice-date">May 19, 2019</div>
+                        </div>
+                        <div class="invoice-save-icon"><a href="#"></a></div>
+                    </div>
+
+                    <div class="invoice-container">
+                        <div class="invoice-text-wrapper">
+                            <div class="numbers-and-price">#144563566543 · €128.00</div>
+                            <div class="invoice-date">May 19, 2019</div>
+                        </div>
+                        <div class="invoice-save-icon"><a href="#"></a></div>
+                    </div>
+
+                    <div class="invoice-container">
+                        <div class="invoice-text-wrapper">
+                            <div class="numbers-and-price">#144563566543 · €128.00</div>
+                            <div class="invoice-date">May 19, 2019</div>
+                        </div>
+                        <div class="invoice-save-icon"><a href="#"></a></div>
+                    </div>
+                </div>
+
+                <div class="selected-billing-information-button"><button>Load more</button></div>
+            </div>
+
+            <div class="my-restaurant-modal">
+                <form action="#">
+                    <div class="my-account-title">restaurant name</div>
+                    <div class="resturant-order-list-form">
+                        <input required id="modal-restaurant-name" class="modal-restaurant-name" type="text">
+                        <label for="modal-restaurant-name">Restaurant name</label>
+                    </div>
+
+                    <div class="my-account-title my-restaurant-second-title">cuisine type</div>
+
+                    <div class="cuisine-types-checkbox-container my-restaurant-checkbox-container">
+                        <div class="checkbox-wrapper">
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Asian</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Asian</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input required type="checkbox"><span>Korean</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

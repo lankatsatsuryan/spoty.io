@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600&family=Barlow:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap');
+@import 'base/variable';
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@import 'blocks/preloader';
+@import 'blocks/default';
+@import 'blocks/selected';
+@import 'blocks/modals';
+@import 'blocks/favorites';
+@import 'blocks/new-user1';
+@import 'blocks/new-user2';
+@import 'blocks/new-user3';
+@import 'blocks/new-user4';
+@import 'blocks/new-user5';
+@import 'blocks/user1';
+@import 'blocks/user2';
+@import 'blocks/user3';
+@import 'blocks/welcome';
+@import 'blocks/dashboard';
+@import 'blocks/menu';
+@import 'blocks/locations';
+
+
+@import 'blocks/modal-welcome1';
+@import 'blocks/modal-welcome2';
+@import 'blocks/modal-welcome3';
+@import 'blocks/modal-welcome4';
+@import 'blocks/modal-paid-plan-user';
+
+
+@import 'base/media';
+@import 'base/welcome-media';

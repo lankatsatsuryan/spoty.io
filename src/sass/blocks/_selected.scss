@@ -1,0 +1,220 @@
+.left-info-wrapper {
+    min-height: calc(100vh - 46px);
+}
+
+.selected_left {
+    margin-top: 32px;
+
+    &-arrow {
+        a {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.7071 5.70711C13.0976 5.31658 13.0976 4.68342 12.7071 4.29289C12.3166 3.90237 11.6834 3.90237 11.2929 4.29289L4.29289 11.2929C3.90237 11.6834 3.90237 12.3166 4.29289 12.7071L11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071C13.0976 19.3166 13.0976 18.6834 12.7071 18.2929L7.41421 13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H7.41421L12.7071 5.70711Z' fill='%23FF5722'/%3E%3C/svg%3E");
+        }
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        padding: 15px 24px;
+        background: #F8F6F6;
+    }
+
+    &-text {
+        padding-left: 16px;
+
+        &-title {
+            font-family: 'Barlow Condensed';
+            font-weight: 600;
+            font-size: 25px;
+            color: $title-color;
+        }
+
+        &-descr {
+            font-family: 'Roboto';
+            margin-top: 2px;
+            font-weight: 400;
+            font-size: 16px;
+            color: $text-color;
+        }
+    }
+
+    &-img {
+        img {
+            width: 100%;
+            height: 232px;
+            object-fit: contain;
+        }
+    }
+
+    &-btns {
+        margin: 24px 0 44px 24px;
+        display: flex;
+
+        .share-btn {
+            button {
+                display: flex;
+                border: 2px solid #DDD5D2;
+                border-radius: 4px;
+                background: #FFFF;
+
+                font-family: 'Barlow';
+                color: $main-color;
+                font-weight: 600;
+                font-size: 16px;
+                text-align: center;
+                padding: 7px 8px 9px 16px;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    padding: 4px 8px 0 0;
+                    width: 16px;
+                    height: 16px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.66667 7.33335C3.03486 7.33335 3.33333 7.63183 3.33333 8.00002V13.3334C3.33333 13.5102 3.40357 13.6797 3.5286 13.8048C3.65362 13.9298 3.82319 14 4 14H12C12.1768 14 12.3464 13.9298 12.4714 13.8048C12.5964 13.6797 12.6667 13.5102 12.6667 13.3334V8.00002C12.6667 7.63183 12.9651 7.33335 13.3333 7.33335C13.7015 7.33335 14 7.63183 14 8.00002V13.3334C14 13.8638 13.7893 14.3725 13.4142 14.7476C13.0391 15.1226 12.5304 15.3334 12 15.3334H4C3.46957 15.3334 2.96086 15.1226 2.58579 14.7476C2.21071 14.3725 2 13.8638 2 13.3334V8.00002C2 7.63183 2.29848 7.33335 2.66667 7.33335Z' fill='%23FF5722'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5286 0.861949C7.78895 0.6016 8.21106 0.6016 8.4714 0.861949L11.1381 3.52862C11.3984 3.78897 11.3984 4.21108 11.1381 4.47142C10.8777 4.73177 10.4556 4.73177 10.1953 4.47142L8 2.27616L5.80474 4.47142C5.54439 4.73177 5.12228 4.73177 4.86193 4.47142C4.60158 4.21108 4.60158 3.78897 4.86193 3.52862L7.5286 0.861949Z' fill='%23FF5722'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 0.666687C8.36819 0.666687 8.66667 0.965164 8.66667 1.33335V10C8.66667 10.3682 8.36819 10.6667 8 10.6667C7.63181 10.6667 7.33333 10.3682 7.33333 10V1.33335C7.33333 0.965164 7.63181 0.666687 8 0.666687Z' fill='%23FF5722'/%3E%3C/svg%3E");
+                }
+            }
+        }
+
+        .directions-btn {
+            margin-left: 30px;
+
+            button {
+                display: flex;
+                border: 2px solid #DDD5D2;
+                border-radius: 4px;
+                background: #FFFF;
+
+                font-family: 'Barlow';
+                color: $main-color;
+                font-weight: 600;
+                font-size: 16px;
+                text-align: center;
+                padding: 7px 8px 9px 16px;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    padding: 6px 8px 0 0;
+                    width: 16px;
+                    height: 16px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.1383 0.861907C15.3375 1.06113 15.3899 1.36408 15.2693 1.6187L9.26934 14.2854C9.1488 14.5398 8.88137 14.6911 8.60115 14.6634C8.32094 14.6357 8.08838 14.4348 8.02008 14.1617L6.78376 9.21639L1.83849 7.98007C1.56531 7.91178 1.3645 7.67922 1.33676 7.399C1.30901 7.11879 1.46031 6.85136 1.71479 6.73082L14.3815 0.73082C14.6361 0.61021 14.939 0.662685 15.1383 0.861907ZM3.96908 7.13835L7.4952 8.01988C7.73406 8.0796 7.92056 8.2661 7.98027 8.50495L8.86181 12.0311L13.2653 2.7349L3.96908 7.13835Z' fill='%23FF5722'/%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+    }
+
+    &-order {
+        padding: 0 24px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        &-img {
+            img {
+                width: 138px;
+                height: 112px;
+                object-fit: contain;
+            }
+        }
+
+        &-info {
+            padding-left: 15px;
+
+            &-header {
+                display: flex;
+                align-items: center;
+
+                .order {
+                    &-price {
+                        font-family: 'Barlow Condensed';
+                        padding-left: 8px;
+                        font-weight: 600;
+                        font-size: 25px;
+                        color: $title-color;
+                    }
+
+                    &-favorite {
+                        a {
+                            width: 24px;
+                            height: 24px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.9131 2.49507C15.702 2.16823 16.5474 2 17.4013 2C18.2551 2 19.1006 2.16823 19.8894 2.49507C20.6781 2.82186 21.3947 3.30081 21.9982 3.90455C22.602 4.5081 23.0813 5.22501 23.408 6.01368C23.7349 6.80249 23.9031 7.64797 23.9031 8.50183C23.9031 9.35568 23.7349 10.2012 23.408 10.99C23.0812 11.7787 22.6022 12.4953 21.9984 13.0989C21.9983 13.099 21.9985 13.0989 21.9984 13.0989L13.1584 21.9389C12.7679 22.3295 12.1347 22.3295 11.7442 21.9389L2.90418 13.0989C1.68496 11.8797 1 10.2261 1 8.50183C1 6.77758 1.68496 5.12395 2.90418 3.90472C4.12341 2.68549 5.77704 2.00053 7.50129 2.00053C9.22554 2.00053 10.8792 2.68549 12.0984 3.90472L12.4513 4.25761L12.804 3.90488C12.8041 3.90483 12.804 3.90494 12.804 3.90488C13.4076 3.30106 14.1244 2.82189 14.9131 2.49507ZM17.4013 4C16.8102 4 16.2248 4.11647 15.6787 4.34274C15.1326 4.56902 14.6365 4.90068 14.2186 5.31877L13.1584 6.37893C12.7679 6.76946 12.1347 6.76946 11.7442 6.37893L10.6842 5.31893C9.84003 4.47478 8.69511 4.00053 7.50129 4.00053C6.30747 4.00053 5.16255 4.47478 4.3184 5.31893C3.47424 6.16309 3 7.30801 3 8.50183C3 9.69564 3.47424 10.8406 4.3184 11.6847L12.4513 19.8176L20.5842 11.6847C21.0023 11.2668 21.3341 10.7705 21.5604 10.2244C21.7866 9.67828 21.9031 9.09295 21.9031 8.50183C21.9031 7.9107 21.7866 7.32537 21.5604 6.77926C21.3341 6.23316 21.0024 5.73699 20.5843 5.3191C20.1665 4.90101 19.67 4.56902 19.1239 4.34274C18.5778 4.11647 17.9924 4 17.4013 4Z' fill='%23FF5722'/%3E%3C/svg%3E");
+                        }
+                    }
+                }
+
+            }
+
+            &-title {
+                font-family: 'Barlow Condensed';
+                margin-top: 16px;
+                font-weight: 600;
+                font-size: 19px;
+                color: $title-color;
+            }
+
+            &-descr {
+                font-family: 'Roboto';
+                margin-top: 3px;
+                font-weight: 400;
+                font-size: 16px;
+                color: $text-color;
+            }
+
+            &-available {
+                font-family: 'Barlow Condensed';
+                margin-top: 24px;
+                font-weight: 600;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $title-color;
+
+                span {
+                    color: #B6A39E;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    &-report {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+
+        .report-text {
+            a {
+                font-family: 'Barlow';
+                font-weight: 600;
+                font-size: 16px;
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+
+        .report-icon {
+            padding-left: 8px;
+            width: 16px;
+            height: 16px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.33333 2.81988V8.09768C3.72193 8.03667 4.1645 8.00004 4.66667 8.00004C5.9245 8.00004 6.96076 8.41478 7.76201 8.73546C7.77186 8.7394 7.78167 8.74333 7.79145 8.74724L7.82852 8.76207V8.76207C8.68703 9.10548 9.29284 9.33337 10 9.33337C10.6195 9.33337 11.0511 9.25838 11.3333 9.18021V3.9024C10.9447 3.96341 10.5022 4.00004 10 4.00004C8.74217 4.00004 7.70591 3.58531 6.90466 3.26463C6.89481 3.26068 6.885 3.25676 6.87522 3.25284L6.83815 3.23801V3.23801C5.97962 2.8946 5.37383 2.66671 4.66667 2.66671C4.04721 2.66671 3.6156 2.7417 3.33333 2.81988ZM2.58333 1.66671C2.99999 1.50005 3.66665 1.33337 4.66667 1.33337C5.66667 1.33337 6.50036 1.66685 7.33227 1.99962L7.37054 2.01493C8.1906 2.34306 9.01537 2.66671 10 2.66671C10.8014 2.66671 11.3884 2.55965 11.8038 2.43171C12.006 2.36942 12.2258 2.40683 12.396 2.53252C12.5662 2.65821 12.6667 2.85724 12.6667 3.06884V9.64134C12.6667 9.89467 12.5231 10.1261 12.2961 10.2386C12.2339 10.2695 12.1631 10.3014 12.0833 10.3334C11.6667 10.5 11 10.6667 10 10.6667C9 10.6667 8.16631 10.3332 7.33439 10.0005L7.29615 9.98517C6.4761 9.65704 5.6513 9.33337 4.66667 9.33337C3.8653 9.33337 3.27829 9.44043 2.86291 9.56837C2.66069 9.63066 2.4409 9.59325 2.27068 9.46756C2.10045 9.34188 2 9.14284 2 8.93124V2.35874C2 2.10541 2.14358 1.87397 2.37056 1.76145C2.43279 1.7306 2.50352 1.69863 2.58333 1.66671Z' fill='%23FF5722'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.66667 6.66671C3.03486 6.66671 3.33333 6.96518 3.33333 7.33337V14.6667C3.33333 15.0349 3.03486 15.3334 2.66667 15.3334C2.29848 15.3334 2 15.0349 2 14.6667V7.33337C2 6.96518 2.29848 6.66671 2.66667 6.66671Z' fill='%23FF5722'/%3E%3C/svg%3E%0A");
+        }
+    }
+}

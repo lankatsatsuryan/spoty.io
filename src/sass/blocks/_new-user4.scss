@@ -1,0 +1,112 @@
+.new-offer-wrapper-in-sign-up {
+    margin-top: 30px;
+    padding: 0 147px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+
+    .new-offer-container-wrapper {
+        width: 100%;
+    }
+
+    .wrapper-title {
+        font-family: 'Barlow Condensed';
+        font-weight: 600;
+        font-size: 41px;
+        text-align: center;
+        color: $title-color;
+    }
+
+    .create-offer-block {
+        // display: none;
+        margin-top: 20px;
+        padding: 52px 0 28px 0;
+    }
+
+    .new-offer-title {
+        margin-top: 9px;
+    }
+
+    .create-offer-selected-images {
+        display: none;
+    }
+
+    .dish-form-descr {
+        // display: none;   
+    }
+
+    .new-offer-textarea {
+        margin-top: 14px;
+    }
+
+    .create-offer-date {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .create-offer-date-wrapper {
+        margin-left: 46px;
+        form {
+            input {
+                box-sizing: border-box;
+                margin-top: 17px;
+                width: 128px;
+                background: #F8F6F6;
+                border-radius: 4px 4px 0px 0px;
+                border: none;
+                border-bottom: 2px solid #DDD5D2;
+
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 16px;
+                color: #B6A39E;
+                padding: 12px 14px;
+            }
+        }
+    }
+
+    .new-offer-wrapper-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+
+        .skip-btn {
+            background: #FFFFFF;
+            border: 2px solid #DDD5D2;
+            border-radius: 4px;
+            padding: 8px 42px;
+
+            font-family: 'Barlow';
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            color: $main-color;
+            margin-right: 32px;
+            cursor: pointer;
+        }
+    }
+}
+
+.publish-btn {
+    background: #FFFFFF;
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #DDD5D2;
+    padding: 8px 16px;
+    border: none;
+
+    &.active {
+        background: $main-color;
+        border: 2px solid $main-color;
+        border-radius: 4px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}

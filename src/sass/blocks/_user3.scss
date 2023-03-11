@@ -1,0 +1,35 @@
+.sign_up {
+    .sign-in {
+        &-container {
+            .sign-in-header {
+                font-family: 'Barlow Condensed';
+                font-weight: 600;
+                font-size: 41px;
+                text-align: center;
+                color: $title-color;      
+            }
+            .sign-in-btns {
+                margin-top: 19px;
+                .sign-in-save-btn {
+                    margin-top: 10px;
+                    font-family: 'Barlow';
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    cursor: pointer;
+    
+                    background: $main-color;
+                    border: 2px solid $main-color;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    
+                }
+            }
+        }
+        
+    }
+    .sign-up-forms-password {
+        padding: 0;
+    }
+}

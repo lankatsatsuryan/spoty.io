@@ -1,0 +1,20 @@
+.sign_up {
+    .sign-in {
+        &-btns {
+            .sign-in-email-btn {
+                margin-top: 17px;
+                font-family: 'Barlow';
+                font-weight: 600;
+                font-size: 16px;
+                text-align: center;
+                color: #FFFFFF;
+                cursor: pointer;
+
+                background: $main-color;
+                border: 2px solid $main-color;
+                border-radius: 4px;
+                padding: 8px 16px;  
+            }
+        }
+    }
+}
