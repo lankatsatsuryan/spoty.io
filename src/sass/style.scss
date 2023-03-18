@@ -12,7 +12,6 @@ body {
 @import 'blocks/preloader';
 @import 'blocks/default';
 @import 'blocks/selected';
-@import 'blocks/modals';
 @import 'blocks/favorites';
 @import 'blocks/new-user1';
 @import 'blocks/new-user2';
@@ -28,12 +27,16 @@ body {
 @import 'blocks/locations';
 
 
-@import 'blocks/modal-welcome1';
-@import 'blocks/modal-welcome2';
-@import 'blocks/modal-welcome3';
-@import 'blocks/modal-welcome4';
+@import 'blocks/modals/modals';
+@import 'blocks/modals/modal-welcome1';
+@import 'blocks/modals/modal-welcome2';
+@import 'blocks/modals/modal-welcome3';
+@import 'blocks/modals/modal-welcome4';
 @import 'blocks/modal-paid-plan-user';
 
 
+@import 'base/mobile-nav.scss';
+
 @import 'base/media';
 @import 'base/welcome-media';
+@import 'base/user-media';

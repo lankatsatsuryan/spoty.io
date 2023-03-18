@@ -10,36 +10,66 @@
 </head>
 
 <body>
+    <div class="mobile-nav-overlay">
+        <nav class="mobile">
+            <div class="mobile-wrapper">
+                <div class="mobile-close-wrapper"><div class="mobile-close"></div></div>
+                <div class="mobile-nav-container">
+                    <div class="mobile-navigation">
+                        <a href="#" class="dashboard selected">Dashboard</a>
+                        <a href="#" class="menu">Menu</a>
+                        <a href="#" class="offers">Offers</a>
+                        <a href="#" class="bookings">Bookings</a>
+                        <a href="#" class="locations">Locations</a>
+                        <a href="#" class="support">Support</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome_left-log-out">
+                <a href="#">Log out</a>
+            </div>
+        </nav>
+    </div>
+
+
     <section class="welcome">
+        <div class="welcome-mobile-header">
+            <a href="#" class="welcome-icon-hamburger"></a>
+            <a href="#" class="welcome-icon-logo"></a>
+            <a href="#" class="welcome-icon-user"></a>
+        </div>
+
         <div class="welcome_wrapper">
             <div class="welcome_left">
                 <div class="left-container">
-                    <a href="#" class="sign_up-header welcome_left-header header_spoty-icon-logo"></a>
-                    <div class="navigation-container">
-                        <a href="#" class="dashboard selected">
-                            Dashboard
-                        </a>
+                    <div class="sign_up-header welcome_left-header"><a href="#"></a></div>
+                    <div class="left-navigation-container">
+                        <div class="navigation-container">
+                            <a href="#" class="dashboard selected">
+                                Dashboard
+                            </a>
 
-                        <a href="#" class="menu">
-                            Menu
-                        </a>
+                            <a href="#" class="menu">
+                                Menu
+                            </a>
 
-                        <a href="#" class="offers">
-                            Offers
-                        </a>
+                            <a href="#" class="offers">
+                                Offers
+                            </a>
 
-                        <a href="#" class="bookings">
-                            Bookings
-                        </a>
+                            <a href="#" class="bookings">
+                                Bookings
+                            </a>
 
-                        <a href="#" class="locations">
-                            Locations
-                        </a>
+                            <a href="#" class="locations">
+                                Locations
+                            </a>
 
-                        <a href="#" class="support">
-                            Support
-                        </a>
-
+                            <a href="#" class="support">
+                                Support
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -67,6 +97,8 @@
                     </div>
                 </div>
 
+                <div class="welcome-mobile-title">Welcome to Spoty</div>
+
                 <div class="steps">
                     <div class="steps_wrapper">
                         <div class="steps-to-do done-steps">
@@ -87,8 +119,7 @@
                                     <div class="done-icon"></div>
                                     <div class="to-do-info done-info">
                                         <div class="done-info-title">Tell us a little about your restaurant</div>
-                                        <div class="done-info-descr">Add your restaurant location, description, working
-                                            hours</div>
+                                        <div class="done-info-descr">Add information about you an...<!-- d restaurant --></div>
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +131,7 @@
                                     <div class="done-icon"></div>
                                     <div class="to-do-info done-info">
                                         <div class="done-info-title">What is on your menu?</div>
-                                        <div class="done-info-descr">Add your restaurant menu and prices</div>
+                                        <div class="done-info-descr">Add your restaurant menu and...<!--  prices --></div>
                                     </div>
                                 </div>
                             </div>
@@ -110,25 +141,32 @@
                             <div class="to-do">
                                 <div class="to-do-wrapper">
                                     <div class="my-account-icon"></div>
+                                    <div class="media-steps-icon"><a href="#"></a></div>
+
                                     <div class="to-do-info">
                                         <div class="to-do-info-title">My Account</div>
-                                        <div class="to-do-info-descr">Add information about you and restaurant</div>
+                                        <div class="to-do-info-descr">Add information about you an...<!-- d restaurant --></div>
                                     </div>
                                 </div>
-                                <button class="to-do-btn btn-add">Add details</button>
+
+                                <div class="to-do-btn btn-add"><button>Add details</button></div>
                             </div>
                         </div>
+
                         <div class="steps-to-do">
                             <div class="to-do">
                                 <div class="to-do-wrapper">
                                     <div class="creat-offer-icon"></div>
+                                    <div class="media-steps-icon"><a href="#"></a></div>
+
                                     <div class="to-do-info">
                                         <div class="to-do-info-title">Create your first offer</div>
                                         <div class="to-do-info-descr">Publish your first offer</div>
                                     </div>
                                 </div>
-                                <button class="create-offer-btn">Create offer</button>
-                            </div>
+
+                                <div class="create-offer-btn create-offer"><button>Create offer</button></div>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -138,9 +176,15 @@
 
     <div class="modal-canvas modal-welcome">
         <div class="account-modal">
+            <div class="welcome-mobile-header">
+                <a href="#" class="welcome-icon-hamburger"></a>
+                <a href="#" class="welcome-icon-logo"></a>
+                <a href="#" class="welcome-icon-user"></a>
+            </div>
+
             <div class="modal-header account-header">
                 <div class="modal-title">My Account</div>
-                <a href="#" class="modal-close"></a>
+                <div class="modal-close"><a href="#"></a></div>
             </div>
 
             <div class="navigation nav-account">
@@ -175,7 +219,7 @@
                             <input required class="grey-placeholder" placeholder="Last name" type="text">
                         </div>
 
-                        <div class="profile-input-wrapper">
+                        <div class="profile-input-wrapper profile-input-email">
                             <input required id="profile-email" class="email" type="email">
                             <div class="icon-for-email"></div>
                             <label class="label-for-email" for="profile-email">Email address</label>

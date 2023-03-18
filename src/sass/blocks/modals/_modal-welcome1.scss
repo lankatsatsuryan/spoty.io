@@ -69,8 +69,8 @@
 
 
     .contacts {
-        padding: 40px 24px 0 24px;
-        // display: none;
+        padding: 40px 24px 20px 24px;
+        display: none;
     }
 
     .contacts-title {
@@ -130,7 +130,7 @@
 
 
     .highlights {
-        padding: 0 24px;
+        padding: 0 24px 20px 24px;
         display: none;
 
         &-title {
@@ -176,7 +176,7 @@
 
     .working-hours {
         margin-top: 40px;
-        padding: 0 24px;
+        padding: 0 24px 20px 24px;
         display: none;
 
         &-title {
@@ -190,7 +190,6 @@
     }
 
     .timetable {
-        display: none;
         margin-top: 25px;
         padding: 24px;
         border: 1px solid #DDD5D2;
@@ -211,7 +210,7 @@
                     font-family: 'Barlow Condensed';
                     font-weight: 600;
                     font-size: 19px;
-                    color: #322D2C;
+                    color: $title-color;
                 }
 
                 .open-or-close {
@@ -280,9 +279,9 @@
     }
 
     .special-hours {
-        display: none;
+        // display: none;
         margin-top: 40px;
-        padding: 0 24px;
+        padding: 0 24px 20px 24px;
 
         &-title {
             font-family: 'Barlow Condensed';
@@ -317,12 +316,15 @@
 }
 
 .plus-icon {
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 4C12.5523 4 13 4.44772 13 5V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V5C11 4.44772 11.4477 4 12 4Z' fill='%23FF5722'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z' fill='%23FF5722'/%3E%3C/svg%3E%0A");
+    a {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 4C12.5523 4 13 4.44772 13 5V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V5C11 4.44772 11.4477 4 12 4Z' fill='%23FF5722'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z' fill='%23FF5722'/%3E%3C/svg%3E%0A");
+    }
 }
 
 .contacts-subtitle {
@@ -400,7 +402,7 @@ input[type=checkbox].switch {
         background: rgba(255, 87, 34, 0.4);
 
         &::before {
-            background: #FF5722;
+            background: $main-color;
             right: 0;
             left: auto;
         }

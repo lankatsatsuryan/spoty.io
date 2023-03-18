@@ -1,34 +1,4 @@
 .nav-selected {
-    .selected-nav-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .selected-nav-container {
-        margin-top: 30px;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-
-        a {
-            margin-left: 24px;
-            font-family: 'Barlow';
-            font-weight: 600;
-            font-size: 16px;
-            text-align: center;
-            color: $text-color;
-            text-decoration: none;
-            padding: 0 29px 12px 29px;
-
-            &.selected,
-            &:hover {
-                color: $main-color;
-                border-bottom: 2px solid $main-color;
-            }
-        }
-    }
-
     .selected-nav-icons {
         display: flex;
         justify-content: center;
@@ -61,16 +31,24 @@
     }
 
     .selected-location-wrapper {
+       /* display: grid;
+        grid-template-columns: repeat(4, 342px);
+        column-gap: 45px; */
         margin-top: 22px;
-        display: grid;
-        grid-template-columns: repeat(4, 320px);
-        column-gap: 24px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
 
         .selected-add-location-container {
             margin-top: 25px;
             border: 2px dashed #DDD5D2;
             border-radius: 4px;
             padding: 100px 40px 61px 40px;
+            // 
+            width: 320px;
+            box-sizing: border-box;
+            margin-right: 35px;
 
             .add-menu-title {
                 margin-top: 16px;
@@ -97,6 +75,10 @@
             background: #FFFFFF;
             border: 1px solid #DDD5D2;
             border-radius: 4px;
+            // 
+            width: 320px;
+            box-sizing: border-box;
+            margin-right: 35px;
 
             .selected-location-img {
                 img {

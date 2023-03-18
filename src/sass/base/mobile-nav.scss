@@ -1,0 +1,57 @@
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    height: 100vh;
+    width: 100%;
+    display: none;
+
+    .mobile {
+        position: absolute;
+        height: 100vh;
+        width: 252px;
+        background: #FFFF;
+        top: 0;
+        left: 0;
+
+        &-wrapper {
+            height: calc(100vh - 70px);
+        }
+
+        &-navigation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+    }
+
+    .mobile-close {
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        border-radius: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.47138 0.528514C9.73173 0.788864 9.73173 1.21097 9.47138 1.47132L1.47138 9.47132C1.21103 9.73167 0.788925 9.73167 0.528575 9.47132C0.268226 9.21097 0.268226 8.78886 0.528575 8.52851L8.52858 0.528514C8.78892 0.268165 9.21104 0.268165 9.47138 0.528514Z' fill='%23FF5722'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.528575 0.528514C0.788925 0.268165 1.21103 0.268165 1.47138 0.528514L9.47138 8.52851C9.73173 8.78886 9.73173 9.21097 9.47138 9.47132C9.21104 9.73167 8.78892 9.73167 8.52858 9.47132L0.528575 1.47132C0.268226 1.21097 0.268226 0.788864 0.528575 0.528514Z' fill='%23FF5722'/%3E%3C/svg%3E%0A");
+        filter: drop-shadow(0px 2px 4px rgba(33, 33, 33, 0.1)) drop-shadow(0px 3px 4px rgba(33, 33, 33, 0.08)) drop-shadow(0px 1px 5px rgba(33, 33, 33, 0.15));
+        cursor: pointer;
+
+        &-wrapper {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+    }
+
+    .mobile-nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
